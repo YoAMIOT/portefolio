@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*General*/
+* {
+	margin: 0;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+	background-color: rgb(10, 25, 47);  
+    margin: 0 !important;
+}
+
+.lightFontColor {
+	color: rgb(204, 214, 246);
+}
+
+#mainContainer{
+	display: flex;
+}
+
+a{
+	text-decoration:none;
+}
+
+li{
+	list-style-type: none;
+}
+
+li::before{
+	color: rgb(99, 252, 216);
+	content: "-";
+}
+
+
+
+/*NavBar*/
+#navBar{
+	width: 10%;
+	height: 100vh;
+	position: fixed;
+	box-shadow: 10px 0 22px 12px rgba(0,0,0,0.59);
+}
+
+/*Main Container*/
+#main{
+	margin-left: 10%;
+	width: 90%;
+}
+
+#centeredContainer{
+	width: 80%;
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
