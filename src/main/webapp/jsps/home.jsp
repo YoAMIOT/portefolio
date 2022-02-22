@@ -11,21 +11,28 @@
 	
 	<body>
 		<div id="mainContainer">
-			<div id="navBar">
-				<nav>
+			<div id="sideBar">
+				<nav id="navBar">
 					<ul>
-						<li><a href="" class="lightFontColor">Accueil</a></li>
-						<li><a href="" class="lightFontColor">À propos</a></li>
-						<li><a href="" class="lightFontColor">Parcours</a></li>
-						<li><a href="" class="lightFontColor">Créations</a></li>
-						
+						<li><a href="" class="lightColor">.home()</a></li>
+						<li><a href="" class="lightColor">.about()</a></li>
+						<li><a href="" class="lightColor">.work()</a></li>
+						<li><a href="" class="lightColor">.contact()</a></li>
 					</ul>
 				</nav>
 			</div>
 			
 			<div id="main">
-				<div id="centeredContainer">
-				
+				<div id="centered">				
+					<div id="home">
+						<span class="fakeStartTag fakeTag">greetings</span>
+						<div id="greetings">
+							<h1 class="flashColor">Hi, I am</h1>
+							<h2 class="lightColor">Yoann Amiot.</h2>
+							<p class="darkerLightColor">I'm a french junior web developer and hobbyist game developer.</p>
+						</div>
+						<span class="fakeEndTag fakeTag">greetings</span>
+					</div>
 				</div>
 			</div>
 		</div>
