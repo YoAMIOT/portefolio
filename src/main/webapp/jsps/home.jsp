@@ -14,16 +14,18 @@
 			<div id="sideBar">
 				<nav id="navBar">
 					<ul>
-						<li><a href="" class="lightColor">.home()</a></li>
-						<li><a href="" class="lightColor">.about()</a></li>
-						<li><a href="" class="lightColor">.work()</a></li>
-						<li><a href="" class="lightColor">.contact()</a></li>
+						<li><a href="#home" class="lightColor">.home()</a></li>
+						<li><a href="#about" class="lightColor">.about()</a></li>
+						<li><a href="#work" class="lightColor">.work()</a></li>
+						<li><a href="#contact" class="lightColor">.contact()</a></li>
 					</ul>
 				</nav>
 			</div>
 			
+			
+			
 			<div id="main">
-				<div id="centered">				
+				<div id="centered">
 					<div id="home">
 						<span class="fakeStartTag fakeTag">greetings</span>
 						<div id="greetings">
@@ -31,7 +33,22 @@
 							<h2 class="lightColor">Yoann Amiot.</h2>
 							<p class="darkerLightColor">I'm a french junior web developer and hobbyist game developer.</p>
 						</div>
-						<span class="fakeEndTag fakeTag">greetings</span>
+						<span class="fakeEndTag fakeTag" id="greetingsEndTag">greetings</span>
+					</div>
+					
+					<div id="about">
+						<span class="fakeStartTag fakeTag">about</span>
+						<span class="fakeEndTag fakeTag" id="aboutEndTag">about</span>
+					</div>
+					
+					<div id="work">
+						<span class="fakeStartTag fakeTag">work</span>
+						<span class="fakeEndTag fakeTag" id="workEndTag">work</span>
+					</div>
+					
+					<div id="contact">
+						<span class="fakeStartTag fakeTag">contact</span>
+						<span class="fakeEndTag fakeTag" id="contactEndTag">contact</span>
 					</div>
 				</div>
 			</div>
