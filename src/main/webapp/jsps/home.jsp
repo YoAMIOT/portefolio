@@ -38,6 +38,18 @@
 					
 					<div id="about">
 						<span class="fakeStartTag fakeTag">about</span>
+						<div id="aboutWindow">
+							<div id="aboutSideBar">
+								<ul>
+									<li><a href="#aboutMe" class="lightColor">.aboutMe()</a></li>
+									<li><a href="#knownTechnologies" class="lightColor">.knownTechnologies()</a></li>
+								</ul>
+							</div>
+							
+							<div id="aboutMain">
+							
+							</div>
+						</div>
 						<span class="fakeEndTag fakeTag" id="aboutEndTag">about</span>
 					</div>
 					
