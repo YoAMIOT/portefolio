@@ -42,12 +42,17 @@
 							<div id="aboutSideBar">
 								<ul>
 									<li><a href="#aboutMe" class="lightColor">.aboutMe()</a></li>
-									<li><a href="#knownTechnologies" class="lightColor">.knownTechnologies()</a></li>
+									<li><a href="#knownTech" class="lightColor">.knownTech()</a></li>
 								</ul>
 							</div>
 							
 							<div id="aboutMain">
-							
+								<div id="aboutMe">
+								
+								</div>
+								<div id="knownTech">
+								
+								</div>
 							</div>
 						</div>
 						<span class="fakeEndTag fakeTag" id="aboutEndTag">about</span>
