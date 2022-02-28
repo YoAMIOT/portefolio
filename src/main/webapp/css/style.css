@@ -227,6 +227,20 @@ h2{
 
 #knownTech{
 	height: 100%;
+	display: flex;
+}
+
+.techContainer{
+	text-align: center;
+	width: 33%;
+	height: 100%;
+	padding-top: 2vh;
+}
+
+.techContainer ul{
+	margin-top: 2vh;
+	padding: 0;
+
 }
 
 #aboutEndTag{
