@@ -200,7 +200,7 @@ h2{
 }
 
 #aboutSideBar li{
-	height: calc(50%);
+	height: 50%;
  	display: flex;
  	justify-content: center;
  	align-items: center;
@@ -234,13 +234,19 @@ h2{
 	text-align: center;
 	width: 33%;
 	height: 100%;
+	display : flex;
+	align-items : center;
+	justify-content : center;
 	padding-top: 2vh;
 }
 
 .techContainer ul{
-	margin-top: 2vh;
+	margin: auto 0;
 	padding: 0;
+}
 
+.techContainer li{
+	margin-top: 3vh;
 }
 
 #aboutEndTag{

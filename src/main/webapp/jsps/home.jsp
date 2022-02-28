@@ -52,8 +52,8 @@
 								</div>
 								<div id="knownTech">
 									<div id="softwares" class="techContainer darkerLightColor">
-										<h3>Software:</h3>
 										<ul>
+											<li><h3>Software:</h3></li>
 											<li>Eclipse IDE</li>
 											<li>VSC</li>
 											<li>Godot Engine</li>
@@ -64,8 +64,8 @@
 										</ul>
 									</div>
 									<div id="languages" class="techContainer darkerLightColor">
-										<h3>Languages:</h3>
 										<ul>
+											<li><h3>Languages:</h3></li>
 											<li>Java / JEE</li>
 											<li>PHP (Beginner)</li>
 											<li>C# (Beginner)</li>
@@ -79,8 +79,8 @@
 										</ul>
 									</div>
 									<div id="environment" class="techContainer darkerLightColor">
-										<h3>Other:</h3>
 										<ul>
+											<li><h3>Other:</h3></li>
 											<li>Windows</li>
 											<li>Linux</li>
 											<li>MVC</li>
