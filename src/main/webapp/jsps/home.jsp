@@ -26,7 +26,7 @@
 			
 			<div id="main">
 				<div id="centered">
-					<div id="home">
+					<div id="home" class="scrollAlignCenter">
 						<span class="fakeStartTag fakeTag">greetings</span>
 						<div id="greetings">
 							<h1 class="flashColor">Hi, I am</h1>
@@ -36,7 +36,7 @@
 						<span class="fakeEndTag fakeTag" id="greetingsEndTag">greetings</span>
 					</div>
 					
-					<div id="about">
+					<div id="about" class="scrollAlignCenter">
 						<span class="fakeStartTag fakeTag">about</span>
 						<div id="aboutWindow">
 							<div id="aboutSideBar">
@@ -48,7 +48,7 @@
 							
 							<div id="aboutMain">
 								<div id="aboutMe">
-								
+
 								</div>
 								<div id="knownTech">
 								
@@ -58,12 +58,12 @@
 						<span class="fakeEndTag fakeTag" id="aboutEndTag">about</span>
 					</div>
 					
-					<div id="work">
+					<div id="work" class="scrollAlignCenter">
 						<span class="fakeStartTag fakeTag">work</span>
 						<span class="fakeEndTag fakeTag" id="workEndTag">work</span>
 					</div>
 					
-					<div id="contact">
+					<div id="contact" class="scrollAlignCenter">
 						<span class="fakeStartTag fakeTag">contact</span>
 						<span class="fakeEndTag fakeTag" id="contactEndTag">contact</span>
 					</div>

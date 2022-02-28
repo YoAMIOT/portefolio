@@ -4,7 +4,8 @@
 * {
 	margin: 0;
 	font-family: "Lucida Console", "Courier New", monospace;
-	scroll-behavior: smooth
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
 }
 
 body {
@@ -65,6 +66,10 @@ li{
 	color: rgba(126, 133, 135, 0.5);
 	font-family: sans-serif;
 	font-size: 0.8em;
+}
+
+.scrollAlignCenter{
+	scroll-snap-align: center;
 }
 /*General------------------------------------*/
 
@@ -207,7 +212,7 @@ h2{
 	top: 0;
 	margin-left: 20%;
 	position: absolute;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	overflow-x: hidden;
 	
 }
