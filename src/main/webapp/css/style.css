@@ -9,7 +9,7 @@
 }
 
 body {
-	background-color: rgb(25, 10, 47);  
+	background-image: radial-gradient(circle at 99% 33%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgb(25,10,47),rgb(25,10,47));
     margin: 0 !important;
 }
 
@@ -101,6 +101,7 @@ li{
 
 /*Side Bar*/
 #sideBar{
+	background-color: rgb(25, 10, 47);
 	width: 10%;
 	height: 100vh;
 	position: fixed;
@@ -223,6 +224,21 @@ h2{
 
 #aboutMe{
 	height: 100%;
+	text-align: justify;
+	font-size: 1.5em;
+}
+
+#aboutMe h2{
+	font-size: 1.7em;
+}
+
+#glb{
+	position: relative;
+	width: 90%;
+	left: 5%;
+	right: 5%;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
 }
 
 #knownTech{

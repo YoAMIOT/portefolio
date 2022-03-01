@@ -48,9 +48,15 @@
 							
 							<div id="aboutMain">
 								<div id="aboutMe" class="darkerLightColor">
-									<p>I'm Yoann AMIOT, a junior fullstack web developer. Since I was a child, I've always been in love with computer technologies.</p>
-									<p>After a 5 month training	centered on Java Enterprise Edition and a 3 weeks traineeship I am now looking to work on exiting project with a large spectrum of technologies!</p>
-									<p>While looking for the perfect fit I'm actively coding video game projects and web projects! Follow me on <a href="https://github.com/YoAMIOT" class="flashColor">Github</a></p>
+									<div id="glb">
+										<h2 class="lightColor">About Me:</h2>
+										<br>
+										<p>I'm Yoann AMIOT, a junior fullstack web developer. Since I was a child, I've always been in love with computer technologies.</p>
+										<br>
+										<p>After a 5 month training	centered on Java Enterprise Edition and a 3 weeks traineeship I am now looking to work on exiting project with a large spectrum of technologies!</p>
+										<br>
+										<p>While looking for the perfect fit I'm actively coding video game projects and web projects! Follow me on <a href="https://github.com/YoAMIOT" class="flashColor">Github</a>!</p>
+									</div>
 								</div>
 								<div id="knownTech">
 									<div id="softwares" class="techContainer darkerLightColor">
