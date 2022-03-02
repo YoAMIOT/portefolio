@@ -36,6 +36,8 @@
 						<span class="fakeEndTag fakeTag" id="greetingsEndTag">greetings</span>
 					</div>
 					
+					
+					
 					<div id="about" class="scrollAlignCenter">
 						<span class="fakeStartTag fakeTag">about</span>
 						<div id="aboutWindow">
@@ -48,14 +50,14 @@
 							
 							<div id="aboutMain">
 								<div id="aboutMe" class="darkerLightColor">
-									<div id="glb">
+									<div id="desc">
 										<h2 class="lightColor">About Me:</h2>
 										<br>
-										<p>I'm Yoann AMIOT, a junior fullstack web developer. Since I was a child, I've always been in love with computer technologies.</p>
+										<p>I'm Yoann AMIOT, a junior fullstack web developer and hobbyist game developer. Since I was a child, I've always been in love with computers and science!.</p>
 										<br>
-										<p>After a 5 month training	centered on Java Enterprise Edition and a 3 weeks traineeship I am now looking to work on exiting project with a large spectrum of technologies!</p>
+										<p>I started my coding journey in 2016, with a bit of C# on the Unity game engine, then 4 years later I followed a 5 month training	centered on Java Enterprise Edition including a 3 weeks traineeship, I am now looking for a job an furthermore I'm looking to work on exciting project with a large spectrum of technologies!</p>
 										<br>
-										<p>While looking for the perfect fit I'm actively coding video game projects and web projects! Follow me on <a href="https://github.com/YoAMIOT" class="flashColor">Github</a>!</p>
+										<p>While looking for the perfect fit I'm actively coding video games projects and web projects also I'm frequently on game jams! Follow me on <a href="https://github.com/YoAMIOT" class="flashColor">Github</a>!</p>
 									</div>
 								</div>
 								<div id="knownTech">
@@ -104,13 +106,20 @@
 						<span class="fakeEndTag fakeTag" id="aboutEndTag">about</span>
 					</div>
 					
+					
+					
 					<div id="work" class="scrollAlignCenter">
 						<span class="fakeStartTag fakeTag">work</span>
 						<span class="fakeEndTag fakeTag" id="workEndTag">work</span>
 					</div>
 					
+					
+					
 					<div id="contact" class="scrollAlignCenter">
 						<span class="fakeStartTag fakeTag">contact</span>
+						<div id="socials">
+							<h2 class="lightColor">Feel free to reach me!</h2>
+						</div>
 						<span class="fakeEndTag fakeTag" id="contactEndTag">contact</span>
 					</div>
 				</div>
