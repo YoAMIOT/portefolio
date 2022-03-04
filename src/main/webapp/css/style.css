@@ -36,6 +36,7 @@ a{
 
 a:hover{
 	color: rgb(218, 100, 255);
+	background-color: rgba(214, 204, 246, 0.05);
 }
 
 li{
@@ -114,17 +115,23 @@ li{
 	height: 33%;
 }
 
-#navBar ul{
-	width: 100%;
-	height: 100%;
-	padding: 0;
-}
 
-#navBar li{
+#navBar a{
 	height: 25%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+#githubLink{
+	display: flex;
+	justify-content: center;
+	border-radius: 50%;
+	margin-bottom: 2vh;
+}
+
+#githubLink img{
+	width: 25%;
 }
 /*Side Bar-----------------------------------*/
 
@@ -194,18 +201,15 @@ h2{
 	border-right: 1px solid rgb(214, 204, 246);
 }
 
-#aboutSideBar ul{
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-}
-
-#aboutSideBar li{
+#aboutSideBar a{
 	height: 50%;
  	display: flex;
  	justify-content: center;
  	align-items: center;
+}
+
+#aboutSideBar a:hover{
+	border-radius: 10px 0 0 10px;
 }
 
 #aboutMain{
@@ -315,6 +319,10 @@ h2{
 	width: 27%;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
+}
+
+#socialContainer a:hover{
+	background-color: rgba(255, 255, 255, 0);
 }
 
 #contactEndTag{

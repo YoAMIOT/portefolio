@@ -13,13 +13,12 @@
 		<div id="mainContainer">
 			<div id="sideBar">
 				<nav id="navBar">
-					<ul>
-						<li><a href="#home" class="lightColor">.home()</a></li>
-						<li><a href="#about" class="lightColor">.about()</a></li>
-						<li><a href="#work" class="lightColor">.work()</a></li>
-						<li><a href="#contact" class="lightColor">.contact()</a></li>
-					</ul>
+					<a href="#home" class="lightColor">.home()</a>
+					<a href="#about" class="lightColor">.about()</a>
+					<a href="#work" class="lightColor">.work()</a>
+					<a href="#contact" class="lightColor">.contact()</a>
 				</nav>
+				<a href="https://github.com/YoAMIOT" id="githubLink"><img alt="GitHub Logo" src="${pageContext.request.contextPath}/img/githubLogo.png"/></a>
 			</div>
 			
 			
@@ -42,10 +41,8 @@
 						<span class="fakeStartTag fakeTag">about</span>
 						<div id="aboutWindow">
 							<div id="aboutSideBar">
-								<ul>
-									<li><a href="#aboutMe" class="lightColor">.aboutMe()</a></li>
-									<li><a href="#knownTech" class="lightColor">.knownTech()</a></li>
-								</ul>
+								<a href="#aboutMe" class="lightColor">.aboutMe()</a>
+								<a href="#knownTech" class="lightColor">.knownTech()</a>
 							</div>
 							
 							<div id="aboutMain">
@@ -60,10 +57,11 @@
 										<p>While looking for the perfect fit I'm actively coding video games projects and web projects also I'm frequently on game jams! Follow me on <a href="https://github.com/YoAMIOT" class="flashColor">Github</a>!</p>
 									</div>
 								</div>
+								
 								<div id="knownTech">
 									<div id="softwares" class="techContainer darkerLightColor">
 										<ul>
-											<li><h3>Software:</h3></li>
+											<li><h3 class="lightColor">Software:</h3></li>
 											<li>Eclipse IDE</li>
 											<li>VSC</li>
 											<li>Godot Engine</li>
@@ -73,10 +71,12 @@
 											<li>Aseprite</li>
 										</ul>
 									</div>
+									
 									<div id="languages" class="techContainer darkerLightColor">
 										<ul>
-											<li><h3>Languages:</h3></li>
+											<li><h3 class="lightColor">Languages:</h3></li>
 											<li>Java / JEE</li>
+											<li>GDScript</li>
 											<li>PHP (Beginner)</li>
 											<li>C# (Beginner)</li>
 											<li>SQL</li>
@@ -84,13 +84,13 @@
 											<li>CSS</li>
 											<li>Javascript</li>
 											<li>Typescript</li>
-											<li>GDScript</li>
 											<li>Bash</li>
 										</ul>
 									</div>
+									
 									<div id="environment" class="techContainer darkerLightColor">
 										<ul>
-											<li><h3>Other:</h3></li>
+											<li><h3 class="lightColor">Other:</h3></li>
 											<li>Windows</li>
 											<li>Linux</li>
 											<li>MVC</li>
