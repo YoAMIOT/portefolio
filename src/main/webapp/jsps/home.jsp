@@ -119,6 +119,11 @@
 						<span class="fakeStartTag fakeTag">contact</span>
 						<div id="socials">
 							<h2 class="lightColor">Feel free to reach me!</h2>
+							<div id="socialContainer">
+								<a href="https://www.fb.me/msg/amiot.yoann"><img alt="Facebook logo" src="${pageContext.request.contextPath}/img/facebookLogo.png"/></a>
+								<a href="https://www.linkedin.com/in/yoannamiot/"><img alt="LinkedIn logo" src="${pageContext.request.contextPath}/img/linkedInLogo.png"/></a>
+								<a href="mailto:yoann.amiot.dev@gmail.com"><img alt="Mail logo" src="${pageContext.request.contextPath}/img/emailLogo.png"/></a>
+							</div>
 						</div>
 						<span class="fakeEndTag fakeTag" id="contactEndTag">contact</span>
 					</div>

@@ -13,7 +13,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http
 			.authorizeRequests()
 				.antMatchers("/", "/home").permitAll()
-				.antMatchers("/css/**").permitAll()
+				.antMatchers("/css/**", "/img/**").permitAll()
 				.anyRequest().authenticated()
 				.and()
 			.formLogin()

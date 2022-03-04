@@ -82,7 +82,7 @@ li{
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: rgba(255, 255, 255, 0); 
+	background: rgb(25, 10, 47); 
 }
  
 /* Handle */
@@ -302,6 +302,19 @@ h2{
 #socials h2{
 	text-align: center;
 	margin-top: 5%;
+}
+
+#socialContainer{
+	height: 35%;
+	width: 69%;
+	position: absolute;
+	bottom: -270vh;
+}
+
+#socialContainer img{
+	width: 27%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
 
 #contactEndTag{
