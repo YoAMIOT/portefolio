@@ -110,6 +110,24 @@
 					
 					<div id="work" class="scrollAlignCenter">
 						<span class="fakeStartTag fakeTag">work</span>
+						<div id="projectsContainer">
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+							<a href=""><img alt="fakePorject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+						</div>
 						<span class="fakeEndTag fakeTag" id="workEndTag">work</span>
 					</div>
 					
