@@ -297,6 +297,65 @@ h2{
 	background-color: rgba(255, 255, 255, 0)
 }
 
+.projectContainer{
+	display: contents;
+	height: 25%;
+	width: 25%;
+}
+
+.projectText{
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 25%;
+	height: 25%;
+	font-size:15px;
+	background: rgba(218, 100, 255, 0.85);
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .2s, visibility .2s;
+}
+
+.projectRow1{
+	top: 0;
+	bottom: 0;
+}
+.projectRow2{
+	top: 25%;
+	bottom:25%;
+}
+.projectRow3{
+	top: 50%;
+	bottom: 50%;
+}
+.projectRow4{
+	top: 75%;
+	bottom: 75%;
+}
+
+.projectColumn1{
+	left: 0; 
+	right: 0;
+}
+.projectColumn2{
+	left: 25%; 
+	right: 25%;
+}
+.projectColumn3{
+	left: 50%; 
+	right: 50%;
+}
+.projectColumn4{
+	left: 75%; 
+	right: 75%;
+}
+
+.projectContainer:hover .projectText{
+	visibility: visible;
+	opacity: 1;
+}
+
 .projectPic{
 	height: 25%;
 	width: 25%;
