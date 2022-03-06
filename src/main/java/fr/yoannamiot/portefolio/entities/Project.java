@@ -28,10 +28,10 @@ public class Project {
 	@Column(nullable = false)
 	private String completeDesciption;
 	
-	@Column(nullable = false)
+	@Column
 	private ArrayList<String> Techs = new ArrayList<String>();
 	
-	@Column(nullable = false)
+	@Column
 	private ArrayList<String> PicturesPath = new ArrayList<String>();
 
 	

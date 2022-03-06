@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -111,70 +112,74 @@
 					<div id="work" class="scrollAlignCenter">
 						<span class="fakeStartTag fakeTag">work</span>
 						<div id="projectsContainer">
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow1 projectColumn1 lightColor">1-1</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow1 projectColumn2 lightColor">1-2</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow1 projectColumn3 lightColor">1-3</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow1 projectColumn4 lightColor">1-4</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow2 projectColumn1 lightColor">2-1</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow2 projectColumn2 lightColor">2-2</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow2 projectColumn3 lightColor">2-3</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow2 projectColumn4 lightColor">2-4</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow3 projectColumn1 lightColor">3-1</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow3 projectColumn2 lightColor">3-2</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow3 projectColumn3 lightColor">3-3</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow3 projectColumn4 lightColor">3-4</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow4 projectColumn1 lightColor">4-1</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow4 projectColumn2 lightColor">4-2</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow4 projectColumn3 lightColor">4-3</p>
-							</div>
-							<div class="projectContainer">							
-								<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-								<p class="projectText projectRow4 projectColumn4 lightColor">4-4</p>
-							</div>
+							<c:set var="anyProjectExists" value="${anyProjectExists}"/>
+							<c:set var="Projects" value="${Projects}"/>
+							<c:if test="${anyProjectExists == true}">
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow1 projectColumn1 lightColor">1-1</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow1 projectColumn2 lightColor">1-2</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow1 projectColumn3 lightColor">1-3</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow1 projectColumn4 lightColor">1-4</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow2 projectColumn1 lightColor">2-1</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow2 projectColumn2 lightColor">2-2</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow2 projectColumn3 lightColor">2-3</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow2 projectColumn4 lightColor">2-4</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow3 projectColumn1 lightColor">3-1</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow3 projectColumn2 lightColor">3-2</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow3 projectColumn3 lightColor">3-3</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow3 projectColumn4 lightColor">3-4</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow4 projectColumn1 lightColor">4-1</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow4 projectColumn2 lightColor">4-2</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow4 projectColumn3 lightColor">4-3</p>
+								</div>
+								<div class="projectContainer">							
+									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
+									<p class="projectText projectRow4 projectColumn4 lightColor">4-4</p>
+								</div>
+							</c:if>
 						</div>
 						<span class="fakeEndTag fakeTag" id="workEndTag">work</span>
 					</div>
