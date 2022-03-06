@@ -20,9 +20,6 @@ public class Project {
 	private String name;
 	
 	@Column(nullable = false)
-	private String shortDescription;
-	
-	@Column(nullable = false)
 	private String mainPicture;
 	
 	@Column(nullable = false)
@@ -44,12 +41,10 @@ public class Project {
 
 
 	//Complete Constructor
-	public Project(int id, String name, String shortDescription, String mainPicture, String completeDesciption,
-			ArrayList<String> techs, ArrayList<String> picturesPath) {
+	public Project(int id, String name, String mainPicture, String completeDesciption, ArrayList<String> techs, ArrayList<String> picturesPath) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.shortDescription = shortDescription;
 		this.mainPicture = mainPicture;
 		this.completeDesciption = completeDesciption;
 		Techs = techs;
@@ -61,9 +56,8 @@ public class Project {
 	//To String
 	@Override
 	public String toString() {
-		return "Project [id=" + id + ", name=" + name + ", shortDescription=" + shortDescription + ", mainPicture="
-				+ mainPicture + ", completeDesciption=" + completeDesciption + ", Techs=" + Techs + ", PicturesPath="
-				+ PicturesPath + "]";
+		return "Project [id=" + id + ", name=" + name + ", mainPicture=" + mainPicture + ", completeDesciption=" + completeDesciption +
+				", Techs=" + Techs + ", PicturesPath=" + PicturesPath + "]";
 	}
 
 	
@@ -83,14 +77,6 @@ public class Project {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getShortDescription() {
-		return shortDescription;
-	}
-
-	public void setShortDescription(String shortDescription) {
-		this.shortDescription = shortDescription;
 	}
 
 	public String getMainPicture() {

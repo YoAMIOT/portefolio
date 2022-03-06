@@ -112,73 +112,26 @@
 					<div id="work" class="scrollAlignCenter">
 						<span class="fakeStartTag fakeTag">work</span>
 						<div id="projectsContainer">
-							<c:set var="anyProjectExists" value="${anyProjectExists}"/>
-							<c:set var="Projects" value="${Projects}"/>
 							<c:if test="${anyProjectExists == true}">
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow1 projectColumn1 lightColor">1-1</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow1 projectColumn2 lightColor">1-2</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow1 projectColumn3 lightColor">1-3</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow1 projectColumn4 lightColor">1-4</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow2 projectColumn1 lightColor">2-1</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow2 projectColumn2 lightColor">2-2</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow2 projectColumn3 lightColor">2-3</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow2 projectColumn4 lightColor">2-4</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow3 projectColumn1 lightColor">3-1</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow3 projectColumn2 lightColor">3-2</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow3 projectColumn3 lightColor">3-3</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow3 projectColumn4 lightColor">3-4</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow4 projectColumn1 lightColor">4-1</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow4 projectColumn2 lightColor">4-2</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow4 projectColumn3 lightColor">4-3</p>
-								</div>
-								<div class="projectContainer">							
-									<a href=""><img alt="fakeProject" src="${pageContext.request.contextPath}/img/projects/fakeProject.png" class="projectPic"></a>
-									<p class="projectText projectRow4 projectColumn4 lightColor">4-4</p>
-								</div>
+								<c:forEach var="p" items="${Projects}" varStatus="status">
+									<div class="projectContainer">							
+										<a href="${pageContext.request.contextPath}/project/${p.getName()}"><img alt="${p.getName()}" src="${pageContext.request.contextPath}/img/projects/${p.getName()}/${p.getMainPicture()}.png" class="projectPic"></a>
+										<c:choose>
+											<c:when test="${status.count == 1 || status.count == 5 || status.count == 9 || status.count == 13}">
+												<p class="projectText lightColor projectColumn1">${p.getName()}</p>
+											</c:when>
+											<c:when test="${status.count == 2 || status.count == 6 || status.count == 10 || status.count == 14}">
+												<p class="projectText lightColor projectColumn2">${p.getName()}</p>
+											</c:when>
+											<c:when test="${status.count == 3 || status.count == 7 || status.count == 11 || status.count == 15}">
+												<p class="projectText lightColor projectColumn3">${p.getName()}</p>
+											</c:when>
+											<c:when test="${status.count == 4 || status.count == 8 || status.count == 12 || status.count == 16}">
+												<p class="projectText lightColor projectColumn4">${p.getName()}</p>
+											</c:when>
+										</c:choose>
+									</div>
+								</c:forEach>
 							</c:if>
 						</div>
 						<span class="fakeEndTag fakeTag" id="workEndTag">work</span>

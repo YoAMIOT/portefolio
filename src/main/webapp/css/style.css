@@ -308,30 +308,13 @@ h2{
 	text-align: center;
 	vertical-align: middle;
 	width: 25%;
-	height: 25%;
+	height: 17px;
 	font-size:15px;
-	background: rgba(218, 100, 255, 0.85);
+	background: rgba(218, 100, 255, 0.9);
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity .2s, visibility .2s;
-}
-
-.projectRow1{
-	top: 0;
-	bottom: 0;
-}
-.projectRow2{
-	top: 25%;
-	bottom:25%;
-}
-.projectRow3{
-	top: 50%;
-	bottom: 50%;
-}
-.projectRow4{
-	top: 75%;
-	bottom: 75%;
 }
 
 .projectColumn1{
