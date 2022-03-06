@@ -30,7 +30,7 @@
 						<span class="fakeStartTag fakeTag">greetings</span>
 						<div id="greetings">
 							<h1 class="flashColor">Hi, I am</h1>
-							<h2 class="lightColor">Yoann Amiot.</h2>
+							<h2 class="lightColor">Yoann Amiot <img alt="" src="${pageContext.request.contextPath}/img/FR-flag.png" id="frenchFlag">.</h2>
 							<p class="darkerLightColor">I'm a french junior web developer and hobbyist game developer.</p>
 						</div>
 						<span class="fakeEndTag fakeTag" id="greetingsEndTag">greetings</span>
@@ -115,7 +115,7 @@
 							<c:if test="${anyProjectExists == true}">
 								<c:forEach var="p" items="${Projects}" varStatus="status">
 									<div class="projectContainer">							
-										<a href="${pageContext.request.contextPath}/project/${p.getName()}"><img alt="${p.getName()}" src="${pageContext.request.contextPath}/img/projects/${p.getName()}/${p.getMainPicture()}.png" class="projectPic"></a>
+										<a href="${pageContext.request.contextPath}/project/${p.getName()}"><img alt="${p.getName()}" src="${pageContext.request.contextPath}/img/projects/${p.getName()}/${p.getMainPicture()}" class="projectPic"></a>
 										<c:choose>
 											<c:when test="${status.count == 1 || status.count == 5 || status.count == 9 || status.count == 13}">
 												<p class="projectText lightColor projectColumn1">${p.getName()}</p>

@@ -1,7 +1,5 @@
 package fr.yoannamiot.portefolio.entities;
 
-import java.util.ArrayList;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,46 +16,48 @@ public class Project {
 	
 	@Column(nullable = false)
 	private String name;
+
+	@Column(nullable = false)
+	private String desciption;
 	
 	@Column(nullable = false)
 	private String mainPicture;
 	
-	@Column(nullable = false)
-	private String completeDesciption;
+	@Column
+	private String picture2;
 	
 	@Column
-	private ArrayList<String> Techs = new ArrayList<String>();
+	private String picture3;
 	
 	@Column
-	private ArrayList<String> PicturesPath = new ArrayList<String>();
-
+	private String techs;
+	
 	
 	
 	//EmptyConstructor
 	public Project() {
 		super();
 	}
-
-
-
-	//Complete Constructor
-	public Project(int id, String name, String mainPicture, String completeDesciption, ArrayList<String> techs, ArrayList<String> picturesPath) {
+	
+	public Project(int id, String name, String desciption, String mainPicture, String picture2, String picture3,
+			String techs) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.desciption = desciption;
 		this.mainPicture = mainPicture;
-		this.completeDesciption = completeDesciption;
-		Techs = techs;
-		PicturesPath = picturesPath;
+		this.picture2 = picture2;
+		this.picture3 = picture3;
+		this.techs = techs;
 	}
 
-
-
-	//To String
+	
+	
+	//To-String
 	@Override
 	public String toString() {
-		return "Project [id=" + id + ", name=" + name + ", mainPicture=" + mainPicture + ", completeDesciption=" + completeDesciption +
-				", Techs=" + Techs + ", PicturesPath=" + PicturesPath + "]";
+		return "Project [id=" + id + ", name=" + name + ", desciption=" + desciption + ", mainPicture=" + mainPicture
+				+ ", picture2=" + picture2 + ", picture3=" + picture3 + ", techs=" + techs + "]";
 	}
 
 	
@@ -79,6 +79,14 @@ public class Project {
 		this.name = name;
 	}
 
+	public String getDesciption() {
+		return desciption;
+	}
+
+	public void setDesciption(String desciption) {
+		this.desciption = desciption;
+	}
+
 	public String getMainPicture() {
 		return mainPicture;
 	}
@@ -87,27 +95,27 @@ public class Project {
 		this.mainPicture = mainPicture;
 	}
 
-	public String getCompleteDesciption() {
-		return completeDesciption;
+	public String getPicture2() {
+		return picture2;
 	}
 
-	public void setCompleteDesciption(String completeDesciption) {
-		this.completeDesciption = completeDesciption;
+	public void setPicture2(String picture2) {
+		this.picture2 = picture2;
 	}
 
-	public ArrayList<String> getTechs() {
-		return Techs;
+	public String getPicture3() {
+		return picture3;
 	}
 
-	public void setTechs(ArrayList<String> techs) {
-		Techs = techs;
+	public void setPicture3(String picture3) {
+		this.picture3 = picture3;
 	}
 
-	public ArrayList<String> getPicturesPath() {
-		return PicturesPath;
+	public String getTechs() {
+		return techs;
 	}
 
-	public void setPicturesPath(ArrayList<String> picturesPath) {
-		PicturesPath = picturesPath;
+	public void setTechs(String techs) {
+		this.techs = techs;
 	}
 }

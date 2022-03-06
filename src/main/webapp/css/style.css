@@ -172,6 +172,11 @@ h2{
 	font-size: 3.5em;
 }
 
+#frenchFlag{
+	height: 1.2em;
+	vertical-align: sub;
+}
+
 #greetingsEndTag{
 	position: absolute;
 	bottom: 0;
