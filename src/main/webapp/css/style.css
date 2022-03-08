@@ -99,7 +99,7 @@ li{
 /*Scrollbar----------------------------------*/
 
 
-
+/*--------------------HOME--------------------*/
 /*Side Bar*/
 #sideBar{
 	background-color: rgb(25, 10, 47);
@@ -398,3 +398,31 @@ h2{
 	left: 19%;
 }
 /*Contact------------------------------------*/
+/*--------------------HOME--------------------*/
+
+
+
+/*------------------PROJECT------------------*/
+#backArrow{
+	font-size: 3em;
+	margin: 1vh 1%;
+}
+
+#projectShowcase{
+	height: calc(100vh - 3em);
+}
+
+#projectShowcase h1{
+	font-size: 2em;
+}
+
+#descriptionContainer{
+	width: 30%;
+	height: calc(100% - 2em);
+	text-align: center;
+}
+
+#pictureContainer{
+	width: 70%;
+	height: calc(100% - 2em);
+}

@@ -14,7 +14,7 @@ public class Project {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
-	@Column(nullable = false)
+	@Column(unique = true, nullable = false)
 	private String name;
 
 	@Column(nullable = false)
@@ -32,6 +32,9 @@ public class Project {
 	@Column
 	private String techs;
 	
+	@Column
+	private String githubLink;
+	
 	
 	
 	//EmptyConstructor
@@ -40,7 +43,7 @@ public class Project {
 	}
 	
 	public Project(int id, String name, String desciption, String mainPicture, String picture2, String picture3,
-			String techs) {
+			String techs, String githubLink) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -49,17 +52,19 @@ public class Project {
 		this.picture2 = picture2;
 		this.picture3 = picture3;
 		this.techs = techs;
+		this.githubLink = githubLink;
 	}
 
-	
-	
+
+
 	//To-String
 	@Override
 	public String toString() {
 		return "Project [id=" + id + ", name=" + name + ", desciption=" + desciption + ", mainPicture=" + mainPicture
-				+ ", picture2=" + picture2 + ", picture3=" + picture3 + ", techs=" + techs + "]";
+				+ ", picture2=" + picture2 + ", picture3=" + picture3 + ", techs=" + techs + ", githubLink="
+				+ githubLink + "]";
 	}
-
+	
 	
 	
 	//Getters and setters
@@ -118,4 +123,13 @@ public class Project {
 	public void setTechs(String techs) {
 		this.techs = techs;
 	}
+	
+	public String getGithubLink() {
+		return githubLink;
+	}
+
+	public void setGithubLink(String githubLink) {
+		this.githubLink = githubLink;
+	}
+
 }

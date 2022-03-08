@@ -25,10 +25,7 @@ public class HomeController {
 		
 		//Parse DB to find any existing project
 		boolean anyProjectExists = ProjectRepository.anyProjectExists();
-		
-		//Insert Test Query
-		//INSERT INTO project (id, complete_desciption, main_picture, name) VALUES (0, 'some desc', 'mainPic', 'Test1'),(1,'description','mainPic','Test2'), (2,'description','mainPic','Test3'), (3,'description','mainPic','Test4'), (4,'description','mainPic','Test5'), (5,'description','mainPic','Test6'), (6,'description','mainPic','Test7'), (7,'description','mainPic','Test8'), (8,'description','mainPic','Test9'),(9,'description','mainPic','Test10'), (10,'description','mainPic','Test11'), (11,'description','mainPic','Test12'), (12,'description','mainPic','Test13'), (13,'description','mainPic','Test14'), (14,'description','mainPic','Test15'), (15,'description','mainPic','Test16'), (16,'description','mainPic','Test17');
-		
+
 		//If a project exists
 		if(anyProjectExists == true) {
 			//Get all projects
