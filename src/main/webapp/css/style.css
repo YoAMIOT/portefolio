@@ -410,19 +410,45 @@ h2{
 
 #projectShowcase{
 	height: calc(100vh - 3em);
+	text-align: center;
 }
 
 #projectShowcase h1{
 	font-size: 2em;
+	width: 100%;
+	border-bottom: 1px solid rgb(214, 204, 246);
+}
+
+#dataContainer{
+	display: flex;
+	height: calc(100% - 2em - 1px);
 }
 
 #descriptionContainer{
 	width: 30%;
-	height: calc(100% - 2em);
-	text-align: center;
+	height: 100%;
 }
 
-#pictureContainer{
+#projectDescription{
+	height: 60%;
+}
+
+#projectTechs{
+	height: 20%;
+}
+
+#projectGithubLink:hover{
+	background-color: rgba(255,255,255,0);
+}
+
+#picturesContainer{
 	width: 70%;
-	height: calc(100% - 2em);
+	height: 100%;
+	background: black;
+	display: flex;
+    align-items: center;
+}
+
+#picturesContainer img{
+	width: 100%;
 }

@@ -16,16 +16,18 @@
 		</nav>
 		<div id="projectShowcase">
 			<h1 class="lightColor">${currentProject.getName()}</h1>
-			<div id="descriptionContainer">
-				<p class="darkerLightColor">${currentProject.getDesciption()}</p>
-				<br>
-				<p class="lightColor">${currentProject.getTechs()}</p>
-				<c:if test="${currentProject.getGithubLink() != null}">		
-					<a class="flashColor" href="${currentProject.getGithubLink()}">Github</a>
-				</c:if>
-			</div>
-			<div id="picturesContainer">
-				<img alt="Project picture" src="${pageContext.request.contextPath}/img/projects/${currentProject.getName()}/${currentProject.getMainPicture()}">
+			<div id="dataContainer">
+				<div id="descriptionContainer">
+					<p class="darkerLightColor" id="projectDescription"><span>${currentProject.getDesciption()}</span></p>
+					<br>
+					<p class="lightColor" id="projectTechs">${currentProject.getTechs()}</p>
+					<c:if test="${currentProject.getGithubLink() != null}">		
+						<a class="flashColor" id="projectGithubLink" href="${currentProject.getGithubLink()}"><img alt="GitHub Logo" src="${pageContext.request.contextPath}/img/githubLogo.png"/></a>
+					</c:if>
+				</div>
+				<div id="picturesContainer">
+					<img alt="Project picture" src="${pageContext.request.contextPath}/img/projects/${currentProject.getName()}/${currentProject.getMainPicture()}">
+				</div>
 			</div>
 		</div>
 	</body>
