@@ -9,9 +9,7 @@ import javax.persistence.Id;
 @Entity
 
 public class Project {
-	
-	//An internal signing site made in 3 weeks during a traineeship, this project was made to be used by schools and training centers. The trainee can log in and sign to attest it's presence, the trainer can counter-sign at the end of the day, and the headmaster can check everything, modify and create other training or users. In 3 weeks I had to focus on back-end mainly, but i also tried to do a working and functionnal front-end
-	
+		
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;

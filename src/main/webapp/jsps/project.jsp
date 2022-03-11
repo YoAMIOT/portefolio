@@ -18,15 +18,23 @@
 			<h1 class="lightColor">${currentProject.getName()}</h1>
 			<div id="dataContainer">
 				<div id="descriptionContainer">
-					<p class="darkerLightColor" id="projectDescription"><span>${currentProject.getDesciption()}</span></p>
+					<div class="darkerLightColor" id="projectDescription"><p>${currentProject.getDesciption()}</p></div>
 					<br>
 					<p class="lightColor" id="projectTechs">${currentProject.getTechs()}</p>
 					<c:if test="${currentProject.getGithubLink() != null}">		
 						<a class="flashColor" id="projectGithubLink" href="${currentProject.getGithubLink()}"><img alt="GitHub Logo" src="${pageContext.request.contextPath}/img/githubLogo.png"/></a>
 					</c:if>
 				</div>
-				<div id="picturesContainer">
-					<img alt="Project picture" src="${pageContext.request.contextPath}/img/projects/${currentProject.getName()}/${currentProject.getMainPicture()}">
+				<div id="projectPicturesContainer">
+					<div id="pictures">
+						<img id="mainPicture" alt="Project picture" src="${pageContext.request.contextPath}/img/projects/${currentProject.getName()}/${currentProject.getMainPicture()}">
+						<c:if test="${currentProject.picture2 != null}">
+							<img id="secondPicture" alt="Project picture2" src="${pageContext.request.contextPath}/img/projects/${currentProject.getName()}/${currentProject.getPicture2()}">
+						</c:if>
+						<c:if test="${currentProject.picture3 != null}">
+							<img id="thirdPicture" alt="Project picture3" src="${pageContext.request.contextPath}/img/projects/${currentProject.getName()}/${currentProject.getPicture3()}">
+						</c:if>
+					</div>
 				</div>
 			</div>
 		</div>

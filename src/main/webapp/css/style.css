@@ -431,6 +431,8 @@ h2{
 
 #projectDescription{
 	height: 60%;
+	display: flex;
+	align-items: center;
 }
 
 #projectTechs{
@@ -441,14 +443,15 @@ h2{
 	background-color: rgba(255,255,255,0);
 }
 
-#picturesContainer{
+#projectPicturesContainer{
 	width: 70%;
-	height: 100%;
+	height: auto;
 	background: black;
 	display: flex;
-    align-items: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
-#picturesContainer img{
+#projectPicturesContainer img{
 	width: 100%;
 }
