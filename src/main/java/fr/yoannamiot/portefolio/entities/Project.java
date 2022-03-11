@@ -24,10 +24,7 @@ public class Project {
 	private String mainPicture;
 	
 	@Column
-	private String picture2;
-	
-	@Column
-	private String picture3;
+	private String detailedPicture;
 	
 	@Column
 	private String techs;
@@ -37,20 +34,19 @@ public class Project {
 	
 	
 	
-	//EmptyConstructor
+	//Constructors
 	public Project() {
 		super();
 	}
-	
-	public Project(int id, String name, String desciption, String mainPicture, String picture2, String picture3,
-			String techs, String githubLink) {
+
+	public Project(int id, String name, String desciption, String mainPicture, String detailedPicture, String techs,
+			String githubLink) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.desciption = desciption;
 		this.mainPicture = mainPicture;
-		this.picture2 = picture2;
-		this.picture3 = picture3;
+		this.detailedPicture = detailedPicture;
 		this.techs = techs;
 		this.githubLink = githubLink;
 	}
@@ -61,10 +57,10 @@ public class Project {
 	@Override
 	public String toString() {
 		return "Project [id=" + id + ", name=" + name + ", desciption=" + desciption + ", mainPicture=" + mainPicture
-				+ ", picture2=" + picture2 + ", picture3=" + picture3 + ", techs=" + techs + ", githubLink="
-				+ githubLink + "]";
+				+ ", detailedPicture=" + detailedPicture + ", techs=" + techs + ", githubLink=" + githubLink + "]";
 	}
 	
+
 	
 	
 	//Getters and setters
@@ -100,22 +96,6 @@ public class Project {
 		this.mainPicture = mainPicture;
 	}
 
-	public String getPicture2() {
-		return picture2;
-	}
-
-	public void setPicture2(String picture2) {
-		this.picture2 = picture2;
-	}
-
-	public String getPicture3() {
-		return picture3;
-	}
-
-	public void setPicture3(String picture3) {
-		this.picture3 = picture3;
-	}
-
 	public String getTechs() {
 		return techs;
 	}
@@ -132,4 +112,11 @@ public class Project {
 		this.githubLink = githubLink;
 	}
 
+	public String getDetailedPicture() {
+		return detailedPicture;
+	}
+
+	public void setDetailedPicture(String detailedPicture) {
+		this.detailedPicture = detailedPicture;
+	}
 }

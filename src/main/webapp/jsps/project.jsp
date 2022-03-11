@@ -26,15 +26,12 @@
 					</c:if>
 				</div>
 				<div id="projectPicturesContainer">
-					<div id="pictures">
+					<c:if test="${currentProject.getDetailedPicture() == null}">
 						<img id="mainPicture" alt="Project picture" src="${pageContext.request.contextPath}/img/projects/${currentProject.getName()}/${currentProject.getMainPicture()}">
-						<c:if test="${currentProject.picture2 != null}">
-							<img id="secondPicture" alt="Project picture2" src="${pageContext.request.contextPath}/img/projects/${currentProject.getName()}/${currentProject.getPicture2()}">
-						</c:if>
-						<c:if test="${currentProject.picture3 != null}">
-							<img id="thirdPicture" alt="Project picture3" src="${pageContext.request.contextPath}/img/projects/${currentProject.getName()}/${currentProject.getPicture3()}">
-						</c:if>
-					</div>
+					</c:if>
+					<c:if test="${currentProject.getDetailedPicture() != null}">
+						<img id="mainPicture" alt="Project picture" src="${pageContext.request.contextPath}/img/projects/${currentProject.getName()}/${currentProject.getDetailedPicture()}">
+					</c:if>
 				</div>
 			</div>
 		</div>
